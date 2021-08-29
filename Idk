@@ -1,0 +1,58 @@
+
+[JScriptException: '$' is undefined]
+   Microsoft.JScript.Block.Evaluate() +143
+   Microsoft.JScript.FunctionObject.CallASTFunc(Object[] args, Object thisob, ScriptObject enclosing_scope, Closure calleeClosure, Binder binder, CultureInfo culture) +454
+   Microsoft.JScript.FunctionObject.Call(Object[] args, Object thisob, ScriptObject enclosing_scope, Closure calleeClosure, Binder binder, CultureInfo culture) +64
+   Microsoft.JScript.Closure.Call(Object[] args, Object thisob, Binder binder, CultureInfo culture) +301
+   Microsoft.JScript.LateBinding.CallValue(Object val, Object[] arguments, Boolean construct, Boolean brackets, VsaEngine engine, Object thisob, Binder binder, CultureInfo culture, String[] namedParameters) +1544
+   Microsoft.JScript.LateBinding.CallValue(Object thisob, Object val, Object[] arguments, Boolean construct, Boolean brackets, VsaEngine engine) +70
+   Elmah.Assertions.FullTrustEvaluationStrategy.Eval(Object context) +74
+   Elmah.Assertions.JScriptAssertion.Test(Object context) +22
+   Elmah.Assertions.LogicalAssertion.Test(Object context) +127
+   Elmah.ErrorFilterModule.OnErrorModuleFiltering(Object sender, ExceptionFilterEventArgs args) +157
+   Elmah.ErrorLogModule.OnFiltering(ExceptionFilterEventArgs args) +20
+   Elmah.ErrorLogModule.LogException(Exception e, HttpContext context) +73
+   Elmah.ErrorLogModule.OnErrorSignaled(Object sender, ErrorSignalEventArgs args) +23
+   Elmah.ErrorSignal.Raise(Exception e, HttpContext context) +88
+   Elmah.ErrorSignal.Raise(Exception e) +7
+   ShopSmart.Web.Store.CheckoutController.ValidateCardPayment(Billing bill) in D:\VSSWork\eCommerce\ShopSmart_4_Solution\Web\Shopsmart\Controllers\CheckoutController2.vb:49
+   ShopSmart.Web.Store.CheckoutController.Billing(FormCollection formCollection) in D:\VSSWork\eCommerce\ShopSmart_4_Solution\Web\Shopsmart\Controllers\CheckoutController.vb:643
+   lambda_method(Closure , ControllerBase , Object[] ) +104
+   System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters) +14
+   System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters) +157
+   System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters) +27
+   System.Web.Mvc.Async.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState) +22
+   System.Web.Mvc.Async.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult) +29
+   System.Web.Mvc.Async.WrappedAsyncResultBase`1.End() +49
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult) +32
+   System.Web.Mvc.Async.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0() +58
+   System.Web.Mvc.Async.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2() +228
+   System.Web.Mvc.Async.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2() +228
+   System.Web.Mvc.Async.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2() +228
+   System.Web.Mvc.Async.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2() +228
+   System.Web.Mvc.Async.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult) +10
+   System.Web.Mvc.Async.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult) +10
+   System.Web.Mvc.Async.WrappedAsyncResultBase`1.End() +49
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult) +34
+   System.Web.Mvc.Async.<>c__DisplayClass3_6.<BeginInvokeAction>b__4() +35
+   System.Web.Mvc.Async.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult) +100
+   System.Web.Mvc.Async.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult) +10
+   System.Web.Mvc.Async.WrappedAsyncResultBase`1.End() +49
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult) +27
+   System.Web.Mvc.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState) +11
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +29
+   System.Web.Mvc.Async.WrappedAsyncResultBase`1.End() +49
+   System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult) +47
+   System.Web.Mvc.<>c.<BeginExecute>b__151_2(IAsyncResult asyncResult, Controller controller) +13
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +22
+   System.Web.Mvc.Async.WrappedAsyncResultBase`1.End() +49
+   System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult) +28
+   System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult) +10
+   System.Web.Mvc.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState) +28
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +29
+   System.Web.Mvc.Async.WrappedAsyncResultBase`1.End() +49
+   System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult) +28
+   System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result) +9
+   System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +577
+   System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step) +132
+   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously) +163
